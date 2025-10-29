@@ -1,151 +1,227 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio Asesmen II-2100 KIPP – Muhammad Rafi Dhiyaulhaq</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS II-2100 KIPP - Indah Ramadhani</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* 🌿 RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    /* 🌸 BODY */
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      min-height: 100vh;
+      color: #2f2f2f;
+      background: linear-gradient(135deg, #fdfbfb 0%, #f7f0ff 100%);
+      background-attachment: fixed;
+      transition: all 0.3s ease;
+    }
+
+    /* 🌼 SIDEBAR */
+    .sidebar {
+      width: 250px;
+      background: #fff;
+      height: 100vh;
+      border-right: 1px solid #eee;
+      padding: 30px 20px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .sidebar h2 {
+      font-family: 'Playfair Display', serif;
+      color: #7b4b36;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #a56d52;
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-radius: 12px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .sidebar a:hover {
+      background: #f9efe9;
+      color: #5d3827;
+      transform: translateX(5px);
+    }
+
+    /* 🌷 CONTENT */
+    .content {
+      margin-left: 260px;
+      padding: 60px;
+      flex: 1;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: #6a3f2b;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    }
+
+    .header h3 {
+      color: #8a8a8a;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .section {
+      margin-bottom: 70px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s ease-out;
+      background: rgba(255,255,255,0.7);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      color: #4a2b1f;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e4c8b0;
+      padding-bottom: 5px;
+    }
+
+    .section h3 {
+      color: #705947;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    /* 🌼 EMBED VIDEO */
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      max-width: 100%;
+    }
+
+    /* 🌺 RESPONSIVE */
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        border-bottom: 1px solid #eee;
+      }
+      .content {
+        margin-left: 0;
+        padding: 30px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="sidebar">
+    <h2>Indah Ramadhani</h2>
+    <a href="#berjumpa">Welcome!</a>
+    <a href="#uts1">All About Me</a>
+    <a href="#uts2">My Songs for You</a>
+    <a href="#uts3">My Stories</a>
+    <a href="#uts4">My SHAPE</a>
+    <a href="#uts5">Reviews</a>
+  </div>
 
-  <!-- NAVIGASI SEDERHANA (tanpa CSS) -->
-  <nav>
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="#selamat-datang">🏠 Selamat Datang</a></li>
-      <li><a href="#uts1">👤 UTS-1 All About Me</a></li>
-      <li><a href="#uts2">🎵 UTS-2 My Songs for You</a></li>
-      <li><a href="#uts3">💬 UTS-3 My Stories for You</a></li>
-      <li><a href="#uts4">❤️ UTS-4 My SHAPE</a></li>
-      <li><a href="#uts5">📝 UTS-5 My Personal Reviews</a></li>
-    </ul>
-    <hr />
-  </nav>
+  <div class="content">
+    <div class="header">
+      <h1>Indah Ramadhani</h1>
+      <h3>UTS II-2100 KIPP</h3>
+      <p><b>Author:</b> 18224037 Indah Ramadhani</p>
+      <p><b>Published:</b> Oktober 19, 2025</p>
+    </div>
 
-  <!-- HALAMAN UTAMA -->
-  <section id="selamat-datang">
-    <header>
-      <h1>Selamat Datang</h1>
-      <h3>Portfolio Asesmen II-2100 KIPP</h3>
-    </header>
+    <div class="section" id="berjumpa">
+      <h2>Welcome!</h2>
+      <img src="images/haii.jpg" alt="Welcome Image" width="400" style="display:block; margin:20px auto; border-radius:12px;">
 
-    <article>
-      <p>
-        Website ini dibuat untuk memenuhi tugas mata kuliah
-        <strong>II2100 Komunikasi Interpersonal dan Profesional</strong>
-        Program Studi Sistem dan Teknologi Informasi – STEI ITB.
-      </p>
+      <p>Halo, semuanyaa! Website ini aku buat sebagai bagian dari mata kuliah <b>II-2100 Komunikasi dan Interpersonal Publik</b>, dari program studi Sistem dan Teknologi Informasi, Institut Teknologi Bandung (ITB).</p>
+      <p>Melalui halaman ini, aku ingin berbagi perjalanan belajar dan refleksi pribadi tentang bagaimana komunikasi bukan hanya soal berbicara, tapi juga tentang <i>understanding, connection,</i> dan <i>growth</i>.</p>
+      <p>Untuk aku, komunikasi yang baik bukan hanya membuat orang lain paham apa yang kita maksud, tetapi juga membuat kita lebih mengenal diri sendiri.</p>
+    </div>
 
-      <p>
-        Melalui situs ini, saya mendokumentasikan berbagai pembelajaran, refleksi pribadi, serta karya
-        yang relevan dengan perkuliahan. Setiap bagian menggambarkan penerapan konsep komunikasi
-        seperti <mark>kesadaran diri</mark>, <mark>mendengarkan aktif</mark>, empati, dan keterbukaan
-        dalam konteks akademik maupun profesional.
-      </p>
-    </article>
+    <div class="section" id="uts1">
+      <h2>UTS 1: All About Me</h2>
+      <h3>Who I Am and How I See MySelf</h3>
+      <p>Hi! Nama aku Indah Ramadhani dan biasa dipanggil Indah. I'm currently learning more about myself, especially how i connect and communicate with others. Sebenernya, kalau aku lihat ke dalam diri sendiri, aku itu bukan tipe orang yang langsung terbuka ke siapapun. Aku butuh waktu untuk merasa nyaman sebelum bisa benar-benar jadi diri sendiri, kadang aku terlalu mikir sebelum ngomong, takut kalau disalahpahami ataupun salah tangkap. Tapi seiring waktu, aku belajar bahwa <b>komunikasi yang baik itu bukan tentang kesempurnaan, tapi tentang keberanian untuk jujur. <i>Being real is better than being perfect.</i> </b> Sekarang aku lebih berusaha untuk ngomong apa adanya, sambil tetap menghargai orang lain.</p>
+      <p>Aku juga sadar bahwa setiap orang punya cara komunikasi yang unik. Aku lebih cenderung menjadi pendengar dulu, baru berbicara. Cara itu membuat aku lebih peka, tapi kadang juga bikin aku kehilangan kesempatan untuk mengekspresikan pendapatku. Nah, dari situ aku mulai belajar bahwa komunikasi adalah keseimbangan antara mendengarkan dan mengungkapkan diri.</p>
 
-    <article>
-      <h2>🎼 Karya Unggulan</h2>
-      <p>
-        Salah satu karya yang disertakan adalah lagu <em>“Better Steps”</em>, sebagai refleksi pribadi
-        mengenai proses bertumbuh dan belajar berkomunikasi dengan lebih jujur, terbuka, dan penuh empati.
-      </p>
-      <!-- Jika punya file audio, taruh di folder yang sama lalu ubah src -->
-      <!-- <audio controls src="better-steps.mp3">Browser Anda tidak mendukung audio tag.</audio> -->
-    </article>
+      <h3>My Communication Journey</h3>
+      <p>Semenjak aku belajar terkait mata kuliah ini, aku mulai sadar pola dan kebiasaan komunikasiku. Aku sering menghindari konflik karena nggak mau susana jadi kurang enak, padahal kadang <b>honest talk</b> justru bisa memperbaiki hubungan. Dari situlah aku mulai berlatih untuk <b>speak with kindness, not fear</b>. Aku juga belajar bahwa komunikasi bukan hanya soal berbicara, tapi juga <b><i>how we show up for others</i></b>. Hal sekecil seperti mendengarkan dengan tulus atau menatap mata lawan bicara bisa menunjukkan perhatian lebih dari seribu kata.</p>
+      <p>Selain itu, aku jadi paham pentingnya <i>self awareness</i>. Dengan mengenali emosi sendiri, aku bisa lebih tenang saat bicara dan lebih ngerti kenapa aku bereaksi dengan cara tertentu. Misalnya, kalau aku lagi marah, aku sekarang coba pause dulu, bukan untuk menahan diri, tapi supaya bisa memilih respon yang lebih baik.</p>
 
-    <article>
-      <h2>🧠 Intisari</h2>
-      <ul>
-        <li>Komunikasi adalah proses dua arah yang menuntut kehadiran penuh dan niat baik.</li>
-        <li>Mendengarkan aktif membantu memahami makna, bukan sekadar kata-kata.</li>
-        <li>Kesadaran diri memandu cara kita merespons situasi dan orang lain.</li>
-        <li>Refleksi berkala membuat pembelajaran lebih melekat dan terarah.</li>
-      </ul>
-    </article>
+      <h3>Reflection and Growth</h3>
+      <p>Melalui proses ini, aku sadar kalau memahami diri sendiri adalah langkah pertama untuk membangun komunikasi yang sehat. Empati dan kejujuran jadi dua hal yang paling berharga buatku. Empati bikin aku bisa memahami orang lain lebih dalam, sedangkan kejujuran bikin hubungan jadi lebih tulus dan ringan. Aku juga belajar menerima bahwa kadang aku bisa salah, bisa gugup, atau bahkan diam, dan itu nggak apa-apa. <i>Growth takes time </i>. Yang penting aku terus belajar dan berusaha untuk hadir sepenuhnya dalam setiap percakapan.</p>
+      <p><i>In the end</i>, <b>“All About Me”</b> bukan cuma tentang mendeskripsikan siapa aku hari ini, tapi juga tentang proses aku menjadi versi diriku yang lebih baik, <b><i>one conversation at a time</i></b>. 🌱</p>
 
-    <hr />
-  </section>
+    </div>
 
-  <!-- UTS-1 -->
-  <section id="uts1">
-    <h2>👤 UTS-1 All About Me</h2>
-    <p>
-      Ceritakan profil singkat, nilai yang dipegang, dan tujuan belajar di mata kuliah ini.
-      Gunakan paragraf naratif, bisa juga menambahkan daftar pengalaman/pembelajaran penting.
+    <div class="section" id="uts2">
+      <h2>UTS 2: My Songs for You</h2>
+      <p><i>"Iris" by Goo Goo Dolls</i>
+         <div style="text-align:center; margin-top:20px;">
+          <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/NdYWuo9OFAw?si=XYsmOPO_qMqQFk1c"
+          title="Iris by Goo Goo Dolls"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>       
     </p>
-    <ul>
-      <li>Latar belakang & minat.</li>
-      <li>Kekuatan & area pengembangan.</li>
-      <li>Harapan terhadap perkuliahan.</li>
-    </ul>
-    <hr />
-  </section>
+    <h3>The Song That Hits Different</h3>
+    <p>Dari sekian banyak lagu yang pernah aku dengar, “Iris” by Goo Goo Dolls selalu punya tempat spesial. Lagu ini terdengar klasik, tapi setiap kali aku dengar ulang, rasanya tetap hangat dan real. Buatku, lagu ini bukan cuma tentang cinta, tapi tentang keinginan untuk <em>be understood, not just seen</em>.</p>
+    <p>Bagian yang paling kena itu waktu liriknya bilang:<br> <em>“I just want you to know who I am.”</em></p>
+    <p>Kalimat sesederhana itu bisa jadi refleksi paling jujur dari hati seseorang yang pengin dipahami tanpa topeng. Kadang kita juga ingin hal yang sama, nggak harus dimengerti sepenuhnya, tapi cukup ada seseorang yang benar-benar mau tahu siapa kita tanpa menilai. Lagu ini ngingetin aku bahwa jujur sama diri sendiri itu juga bentuk komunikasi. Karena sering kali kita terlalu sibuk buat terlihat “baik-baik aja,” padahal yang kita butuhin cuma ruang buat jadi diri sendiri.</p>
 
-  <!-- UTS-2 -->
-  <section id="uts2">
-    <h2>🎵 UTS-2 My Songs for You</h2>
-    <p>
-      Jelaskan pilihan lagu, alasan pemilihan, serta pesan komunikasi yang ingin disampaikan.
-      Jika ada, sertakan lirik inti (pendek), atau sematkan tautan ke platform musik.
-    </p>
-    <p>
-      Contoh tautan: <a href="https://open.spotify.com/" target="_blank" rel="noopener">Dengar di Spotify</a>
-    </p>
-    <hr />
-  </section>
+    <h3>Reflection: When Words Fail, Music Speaks</h3>
+    <p>Setiap kali aku denger “Iris”, rasanya kayak ngobrol sama diri sendiri di tengah malam yang tenang. Suaranya lembut tapi emosional, dan cara Goo Goo Dolls nyanyiin setiap baitnya bikin liriknya terasa hidup. Lagu ini buat aku jadi pengingat bahwa nggak semua hal bisa dijelaskan lewat kata-kata. <em>Sometimes, the heart just speaks louder than the mind.</em> Dan di situ, musik jadi jembatan antara yang nggak bisa diucapkan dan yang tetap ingin disampaikan. Aku juga ngerasa, lagu ini ngajarin bahwa <em>vulnerability</em> bukan kelemahan. Justru keberanian terbesar datang dari saat kita berani menunjukkan sisi yang paling manusiawi, meski dunia kadang nggak ngerti.</p>
 
-  <!-- UTS-3 -->
-  <section id="uts3">
-    <h2>💬 UTS-3 My Stories for You</h2>
-    <p>
-      Tulis cerita/refleksi yang menunjukkan penerapan konsep komunikasi (empati, asertif,
-      <em>active listening</em>, dsb.) dalam pengalaman nyata.
-    </p>
-    <blockquote>
-      “Saya belajar bahwa klarifikasi niat di awal percakapan membuat diskusi lebih terarah.”
-    </blockquote>
-    <hr />
-  </section>
-
-  <!-- UTS-4 -->
-  <section id="uts4">
-    <h2>❤️ UTS-4 My SHAPE</h2>
-    <p>
-      Gunakan kerangka SHAPE (Strengths, Heart, Abilities, Personality, Experiences)
-      untuk memetakan potensi diri dan rencana pengembangan.
-    </p>
-    <ol>
-      <li><strong>Strengths:</strong> …</li>
-      <li><strong>Heart (Passion):</strong> …</li>
-      <li><strong>Abilities:</strong> …</li>
-      <li><strong>Personality:</strong> …</li>
-      <li><strong>Experiences:</strong> …</li>
-    </ol>
-    <hr />
-  </section>
-
-  <!-- UTS-5 -->
-  <section id="uts5">
-    <h2>📝 UTS-5 My Personal Reviews</h2>
-    <p>
-      Kumpulan ulasan/refleksi akhir: apa yang berubah dari cara berkomunikasi, pelajaran paling penting,
-      dan rencana tindak lanjut ke depan.
-    </p>
-
-    <h3>Kesimpulan</h3>
-    <ul>
-      <li>Komunikasi efektif berawal dari kesadaran diri.</li>
-      <li>Mendengarkan aktif membangun kepercayaan dan kedekatan.</li>
-      <li>Umpan balik yang jelas mendorong perbaikan berkelanjutan.</li>
-      <li>Refleksi rutin mengubah wawasan menjadi kebiasaan.</li>
-    </ul>
-    <hr />
-  </section>
-
-  <footer>
-    <p>
-      © 2025 Muhammad Rafi Dhiyaulhaq · Mata Kuliah II2100 KIPP · STEI ITB
-    </p>
-  </footer>
-</body>
-</html>
+    <h3>The Lyrics: Between Love, Fear, and
